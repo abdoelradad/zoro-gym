@@ -104,11 +104,19 @@ const prices = [
 
 const Prices = () => {
   return (
-    <section className=" bg-white pt-20 pb-32" id="prices">
-      <div className="container mx-auto">
-        <h2 className="h2 text-center text-black mb-16">اختر اشتراكك</h2>
+    <section className=" pt-20 pb-32 bg-white" id="prices">
+      <div className="container mx-auto ">
+        <h2 className="h3 md:h2 text-center text-black mb-10 md:mb-16">
+          اختر اشتراكك
+        </h2>
 
-        <div className="w-[80%] mx-auto md:max-h-[500px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16 "
+        >
           {prices.map((card, index) => {
             return (
               <div
@@ -121,8 +129,8 @@ const Prices = () => {
                   </div>
                 )}
                 <div className="gap-1 flex flex-col border-b-[1px]">
-                  <h4 className="h5">{card.title}</h4>
-                  <p className="text-md font-bold text-accent pb-3">
+                  <h4 className="h6">{card.title}</h4>
+                  <p className="text-sm font-bold text-accent pb-3">
                     {card.desc}
                   </p>
                 </div>
@@ -157,7 +165,7 @@ const Prices = () => {
               </div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

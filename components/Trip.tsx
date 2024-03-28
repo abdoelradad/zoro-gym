@@ -24,7 +24,7 @@ const Trip = () => {
   return (
     <section className="pt-16 pb-24 bg-black">
       <div className="container mx-auto">
-        <h2 className="h2 text-center text-white mb-10">
+        <h2 className="h3 md:h2 text-center text-white mb-10">
           ليه تبدأ رحلتك معنا ؟{" "}
         </h2>
 
@@ -33,8 +33,8 @@ const Trip = () => {
           {featured.map((feature, index) => {
             return (
               <div
-                className="flex items-start flex-col md:flex-row bg-primary-200 p-6 gap-5 rounded-xl cursor-pointer transition-all
-                  trip h-[270px] md:h-[220px]"
+                className="flex items-center text-center md:text-right md:items-start flex-col md:flex-row bg-primary-200 p-6 gap-5 rounded-xl cursor-pointer transition-all
+                  trip h-[300px] md:h-[220px]"
                 key={index}
               >
                 <div

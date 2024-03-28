@@ -25,7 +25,7 @@ const sessions = [
 
 const Sessions = () => {
   return (
-    <section className="pt-32 pb-32 bg-white">
+    <section className="pt-16 pb-16 md:pt-32 md:pb-32 bg-white">
       <div className="container mx-auto">
         <div className=" grid grid-cols-1 md:grid-cols-2">
           {sessions.map((sessionn, index) => {

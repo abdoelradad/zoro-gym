@@ -22,7 +22,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <link rel="icon" href="/favicon.ico" sizes="any" />
       <body
         className={`${cairo.className} w-full max-w-[1920px] mx-auto bg-white`}
       >

@@ -33,7 +33,7 @@ const Program = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.1 }}
-          className="h3 text-center mb-12"
+          className="h4 md:h3 text-center mb-12"
         >
           برنامجك التدريبي بيشمل :
         </motion.h3>

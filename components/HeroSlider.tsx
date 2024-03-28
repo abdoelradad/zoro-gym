@@ -15,8 +15,8 @@ import { Link } from "react-scroll";
 const HeroSlider = () => {
   return (
     <Swiper>
-      <SwiperSlide className="h-full flex justify-end pt-32">
-        <div className="flex flex-col items-center lg:items-start lg:max-w-[700px] gap-5 md:gap-10">
+      <SwiperSlide className="h-full flex justify-end pt-24">
+        <div className="flex flex-col items-center lg:items-start lg:max-w-[700px] gap-5 md:gap-8">
           <motion.h1
             variants={fadeIn("up", 0.3)}
             initial="hidden"
@@ -24,7 +24,8 @@ const HeroSlider = () => {
             viewport={{ once: true, amount: 0.2 }}
             className=" text-4xl md:text-5xl xl:text-6xl text-white text-center lg:text-right mb-2"
           >
-            مستعد لبداية جديدة للوصول للجسم المثالى مع أفضل المدربيين!
+            بناء عضلاتك هي ليست أن تكون أفضل مما كنت عليه بمساعدة نخبة من
+            المدربيين
           </motion.h1>
           <motion.p
             variants={fadeIn("up", 0.2)}
@@ -33,9 +34,9 @@ const HeroSlider = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="text-white text-xl text-center lg:text-right mb-4"
           >
-            جهز نفسك وانضم لالاف الشباب في أقوى وامتع مغامرة هتعشيها مع برنامج
-            تدريبي شامل هيساعدك توصل لافضل نسخة منك تحت إشراف فريق كامل من
-            الأطباء المتخصصين.
+            العوامل التي يحتاجها لاعب كمال الأجسام للإنتظام في هذه الرياضة
+            فالعامل النفسي يلعب دورا مهما في نشاط وحماس وفعالية اللاعب خلال
+            مسيرته في عآلم كمال الأجسام
           </motion.p>
         </div>
       </SwiperSlide>

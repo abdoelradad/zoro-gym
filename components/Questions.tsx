@@ -31,12 +31,12 @@ const Questions = () => {
   return (
     <section className="pt-24 pb-24">
       <div className="container mx-auto">
-        <h3 className="h3 text-black text-center mb-16">
+        <h3 className="h4 md:h3 text-black text-center mb-16">
           عندك سؤال فى التدريب ؟
         </h3>
 
         <div className="flex items-center justify-between">
-          <div className="w-[80%] md:w-[60%] flex flex-col justify-start gap-6">
+          <div className="w-[100%] md:w-[60%] flex flex-col justify-start gap-6">
             {questions.map((question, index) => {
               return (
                 <div key={index} className=" border-b-[1px] border-black/20">
@@ -74,13 +74,13 @@ const Questions = () => {
               );
             })}
           </div>
-          <div className=" relative">
+          <div className="hidden md:block relative">
             <Image
-              src={"/assets/img/hero/hero-2.png"}
+              src={"/assets/img/hero/hero-2.webp"}
               width={400}
               height={400}
               alt="img"
-              className="hidden md:block bgCrazy rounded-full shadow-xl "
+              className="bgCrazy rounded-full shadow-xl "
             />
             <FaQuestion className="hidden md:block md:absolute top-10 border-[7px] border-accent right-16 text-8xl w-[100px] h-[100px] bg-white/80 p-5 rounded-full text-accent" />
           </div>
